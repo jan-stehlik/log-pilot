@@ -2,6 +2,14 @@
 
 
 [[projects]]
+  digest = "1:ca925d9044d89db711daf7013baf9824e7598a9dc59a97a3d909bff43c7cb48d"
+  name = "github.com/AliyunContainerService/log-pilot"
+  packages = ["pilot"]
+  pruneopts = "UT"
+  revision = "f987d496724d33b8bed0f9d207bcab07876fd8f7"
+  version = "v0.9.7"
+
+[[projects]]
   digest = "1:f9ae348e1f793dcf9ed930ed47136a67343dbd6809c5c91391322267f4476892"
   name = "github.com/Microsoft/go-winio"
   packages = ["."]
@@ -161,6 +169,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/AliyunContainerService/log-pilot/pilot",
     "github.com/Sirupsen/logrus",
     "github.com/docker/docker/api/types",
     "github.com/docker/docker/api/types/events",
@@ -169,6 +178,7 @@
     "github.com/docker/docker/client",
     "github.com/elastic/go-ucfg",
     "github.com/elastic/go-ucfg/yaml",
+    "github.com/pkg/errors",
     "golang.org/x/net/context",
     "gopkg.in/check.v1",
   ]

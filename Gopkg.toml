@@ -19,10 +19,8 @@
 #   name = "github.com/x/y"
 #   version = "2.4.0"
 #
-# [prune]
-#   non-go = false
-#   go-tests = true
-#   unused-packages = true
+#[prune]
+#   unused-packages = false
 
 
 [[constraint]]
@@ -35,3 +33,23 @@
 
 [[constraint]]
   name = "github.com/pkg/errors"
+
+[[constraint]]
+  name = "github.com/hashicorp/hcl"
+  version = "2.3.0"
+
+[[constraint]]
+  name = "github.com/wanchain/go-wanchain"
+  version = "2.2.0"
+
+[[constraint]]
+  name = "github.com/gorilla/websocket"
+  version = "1.4.2"
+
+[[constraint]]
+  name = "github.com/ulikunitz/xz"
+  version = "0.5.10"
+
+[[constraint]]
+  name = "github.com/miekg/dns"
+  version = "1.0.14"

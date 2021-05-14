@@ -99,6 +99,14 @@
   version = "v0.4"
 
 [[projects]]
+  digest = "1:2f5a78523bcec7d39633fabe531667371921e633deed2993402782a1d5d23e3d"
+  name = "github.com/miekg/dns"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "9f8f2e3a3c12a701d9137ce4e7bb65f9c931f550"
+  version = "v1.0.14"
+
+[[projects]]
   digest = "1:37423212694a4316f48e0bbac8e4f1fd366a384a286fbaa7d80baf99d86f0416"
   name = "github.com/opencontainers/go-digest"
   packages = ["."]
@@ -131,11 +139,24 @@
   version = "v1.2.0"
 
 [[projects]]
-  digest = "1:399d31346bf36d9bfaf3ba628e59199c86932ab81cf0cd35472df3b08369b736"
+  digest = "1:fa3553fabe9a46fb5e86c76be8eb62e1a713b2918ab83aa1a4c3f976fd1fc39e"
+  name = "golang.org/x/mod"
+  packages = ["semver"]
+  pruneopts = "UT"
+  revision = "d6ab96f2441f9631f81862375ef66782fc4a9c12"
+  version = "v0.4.2"
+
+[[projects]]
+  digest = "1:4a8387afd3c9acb4d49cbdb8b077ccd6abea72ef70620455ab783f3c669d9bb8"
   name = "golang.org/x/net"
   packages = [
+    "bpf",
     "context",
     "context/ctxhttp",
+    "internal/iana",
+    "internal/socket",
+    "ipv4",
+    "ipv6",
     "proxy",
   ]
   pruneopts = "UT"
@@ -150,6 +171,39 @@
   ]
   pruneopts = "UT"
   revision = "82aafbf43bf885069dc71b7e7c2f9d7a614d47da"
+
+[[projects]]
+  branch = "dev.go2go"
+  digest = "1:3378a4adff91f11422e56174a3eec9f3e518242b5165ec7997f84c5f76d3c74f"
+  name = "golang.org/x/tools"
+  packages = [
+    "go/ast/astutil",
+    "go/gcexportdata",
+    "go/internal/gcimporter",
+    "go/internal/packagesdriver",
+    "go/packages",
+    "go/types/typeutil",
+    "internal/event",
+    "internal/event/core",
+    "internal/event/keys",
+    "internal/event/label",
+    "internal/gocommand",
+    "internal/packagesinternal",
+    "internal/typesinternal",
+  ]
+  pruneopts = "UT"
+  revision = "76e917206452e73dc28cbeb58a15ea8f30487263"
+
+[[projects]]
+  branch = "master"
+  digest = "1:918a46e4a2fb83df33f668f5a6bd51b2996775d073fce1800d3ec01b0a5ddd2b"
+  name = "golang.org/x/xerrors"
+  packages = [
+    ".",
+    "internal",
+  ]
+  pruneopts = "UT"
+  revision = "5ec99f83aff198f5fbd629d6c8d8eb38a04218ca"
 
 [[projects]]
   digest = "1:dcb51660fc1fd7bfa3f45305db912fa587c12c17658fd66b3ab55339b59ffbe6"
@@ -178,6 +232,7 @@
     "github.com/docker/docker/client",
     "github.com/elastic/go-ucfg",
     "github.com/elastic/go-ucfg/yaml",
+    "github.com/miekg/dns",
     "golang.org/x/net/context",
     "gopkg.in/check.v1",
   ]

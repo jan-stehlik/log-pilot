@@ -123,12 +123,12 @@
   revision = "839d9e913e063e28dfd0e6c7b7512793e0a48be9"
 
 [[projects]]
-  digest = "1:600c933eb890b1b8e9b49114a41520da1784ab21b3254563816ca8f112b22efb"
+  digest = "1:274f67cb6fed9588ea2521ecdac05a6d62a8c51c074c1fccc6a49a40ba80e925"
   name = "github.com/satori/go.uuid"
   packages = ["."]
   pruneopts = "UT"
-  revision = "f9ab0dce87d815821e221626b772e3475a0d2749"
-  version = "v1.0.0"
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [[projects]]
   digest = "1:399d31346bf36d9bfaf3ba628e59199c86932ab81cf0cd35472df3b08369b736"
@@ -178,7 +178,6 @@
     "github.com/docker/docker/client",
     "github.com/elastic/go-ucfg",
     "github.com/elastic/go-ucfg/yaml",
-    "github.com/pkg/errors",
     "golang.org/x/net/context",
     "gopkg.in/check.v1",
   ]
